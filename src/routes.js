@@ -16,12 +16,12 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   // Home page
   .state('home', {
     url: '/',
-    templateUrl: 'lib/src/templates/home.template.html'
+    templateUrl: 'templates/home.template.html'
   })
 
   .state('resume', {
     url: '/resume',
-    templateUrl: 'lib/src/templates/resume.template.html'
+    templateUrl: 'src/templates/resume.template.html'
   });
   // Premade list page
   // .state('categories', {
