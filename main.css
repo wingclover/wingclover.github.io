@@ -1,5 +1,5 @@
 /* Ensure elements load hidden before ScrollReveal runs */
-.sr #intro-tile p, .sr #contact, .sr .thumbnail, .sr #resume .center_piece{ visibility: hidden; }
+/*.sr #intro-tile p, .sr #contact, .sr .thumbnail, .sr #resume .center_piece{ visibility: hidden; }*/
 
 html, body {
 	margin:0;
@@ -195,7 +195,7 @@ list-style-type: none;
 	}
 	h2 {
 		font-size: 20px;
-		font-weight: bold; 
+		font-weight: bold;
 	}
 
 	.navbar-header {
@@ -234,5 +234,3 @@ list-style-type: none;
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { ... }
-
-
