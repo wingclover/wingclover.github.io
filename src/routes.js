@@ -16,7 +16,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   // Home page
   .state('home', {
     url: '/',
-    templateUrl: 'templates/home.template.html'
+    templateUrl: 'src/templates/home.template.html'
   })
 
   .state('resume', {
