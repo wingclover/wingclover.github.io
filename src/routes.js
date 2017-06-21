@@ -22,6 +22,16 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   .state('resume', {
     url: '/resume',
     templateUrl: 'src/templates/resume.template.html'
+  })
+
+  .state('projects', {
+    url: '/projects',
+    templateUrl: 'src/templates/projects.template.html'
+  })
+
+  .state('gallery', {
+    url: '/gallery',
+    templateUrl: 'src/templates/gallery.template.html'
   });
   // Premade list page
   // .state('categories', {
