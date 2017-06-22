@@ -69,7 +69,7 @@
 		<footer>
 		  <div class="container-fluid">
 		    <div class="text-center">
-				Copyright © 2016
+				Copyright © 2017
 			</div>
 		  </div>
 		</footer>
@@ -84,8 +84,10 @@
 
 <script src="src/routes.js"></script>
 <script>
+		// animate homepage paragraphs
+	sr.reveal('#intro-tile p', 100);
 		// animate gallery photos
-	sr.reveal('#intro-tile p, #contact, .thumbnail', 100);
+	sr.reveal('#contact, .thumbnail', 100);
 	sr.reveal('#resume .center_piece', {origin: 'right', distance: '80%', viewFactor: 0.1, duration: 3000}, 100);
 </script>
 
