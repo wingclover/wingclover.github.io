@@ -30,10 +30,13 @@ html, body {
 /*--- header ---*/
 
 h1 {
-	font-family: "Old Standard TT",serif;
 	margin-top: 0px;
 	text-decoration: none;
-	color: grey;
+	color: #DF744A;
+}
+
+.navbar-nav {
+	color: #DF744A;
 }
 
 .navbar-brand a:focus, .navbar-brand a:hover {
