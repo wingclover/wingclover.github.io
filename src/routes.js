@@ -21,12 +21,30 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 
   .state('resume', {
     url: '/resume',
-    templateUrl: 'src/templates/resume.template.html'
+    templateUrl: 'src/templates/resume.template.html',
+    controller: 'ResumeController as ResCtrl',
+    resolve: {
+      websites: ['ProjectsService', function (ProjectsService) {
+        return ProjectsService.getProjectsForCategory("website");
+      }],
+      homeworks: ['ProjectsService', function (ProjectsService) {
+        return ProjectsService.getProjectsForCategory("homework");
+      }]
+    }
   })
 
   .state('projects', {
     url: '/projects',
-    templateUrl: 'src/templates/projects.template.html'
+    templateUrl: 'src/templates/projects.template.html',
+    controller: 'ProjectsController as proCtrl',
+    resolve: {
+      websites: ['ProjectsService', function (ProjectsService) {
+        return ProjectsService.getProjectsForCategory("website");
+      }],
+      homeworks: ['ProjectsService', function (ProjectsService) {
+        return ProjectsService.getProjectsForCategory("homework");
+      }]
+    }
   })
 
   .state('gallery', {
