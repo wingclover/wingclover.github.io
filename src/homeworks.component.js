@@ -5,7 +5,7 @@
 	.component('homeworks',{
 		templateUrl: 'src/templates/homeworks.template.html',
 		bindings: {
-		categories: '<'
+		homeworks: '<'
 		}
 	});
 
