@@ -11,13 +11,13 @@
 		service.getAllProjects = function(){
 			return $http({
 				method: "GET",
-				url: "https://sabercathost.com/4Xu5/projects.json"
+				url: "https://api.myjson.com/bins/pz5xx"
 			}).then(function(result){
 				return result.data})
 		};
 
 		service.getProjectsForCategory = function(category){
-			var categoryUrl = "https://sabercathost.com/4Xu5/projects.json?type=" + category;
+			var categoryUrl = "https://api.myjson.com/bins/pz5xx?type=" + category;
 			return $http({
 				method: "GET",
 				url: categoryUrl
