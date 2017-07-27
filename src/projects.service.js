@@ -11,13 +11,13 @@
 		service.getAllProjects = function(){
 			return $http({
 				method: "GET",
-				url: "https://yingwang.droppages.com/projects.json"
+				url: "https://sabercathost.com/4Xu5/projects.json"
 			}).then(function(result){
 				return result.data})
 		};
 
 		service.getProjectsForCategory = function(category){
-			var categoryUrl = "https://yingwang.droppages.com/projects.json?type=" + category;
+			var categoryUrl = "https://sabercathost.com/4Xu5/projects.json?type=" + category;
 			return $http({
 				method: "GET",
 				url: categoryUrl
