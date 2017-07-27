@@ -17,12 +17,12 @@
 		};
 
 		service.getProjectsForCategory = function(category){
-			var categoryUrl = "https://api.myjson.com/bins/pz5xx?type=" + category;
 			return $http({
 				method: "GET",
-				url: categoryUrl
+				url: "https://api.myjson.com/bins/pz5xx"
 			}).then(function(result){
-				return result.data.projects})
+				var projects = result.data.filter(function(pr){return pr.type==category});
+				return projects})
 		};
 	};
 })();
