@@ -1,5 +1,9 @@
 <ul class="list-group">
 	<li role="presentation" ng-repeat="website in $ctrl.websites" class="list-group-item">
+		<script type="text/javascript">
+			console.log("4:36pm. This is inside websites list, the current website is:");
+			console.log(website.description);
+		</script>
 		{{ website.description }}<a href="{{ website.url }}">More...</a>
 	</li>
 </ul>
