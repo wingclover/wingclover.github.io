@@ -3,8 +3,8 @@
 		<h2>Projects</h2>
 	</div>
 	<div>
-		<p ng-repeat="website in websites">{{website.description}}</p>
-		<p ng-repeat="website in websites">abc</p>
+		<p ng-repeat="website in proCtrl.websites">{{website.description}}</p>
+		<p ng-repeat="website in $ctrl.websites">abc</p>
 		<ul class="list-group">
 			<websites website="$ctrl.website" ng-repeat="website in websites"></websites>
 		</ul>
