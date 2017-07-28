@@ -41,17 +41,14 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       websites: ['ProjectsService', function (ProjectsService) {
         ProjectsService.getProjectsForCategory("website").then(
           function(response){
-            console.log("5:03pm, on projects page, websites data:")
+            console.log("5:13pm, on projects page, websites data:")
             console.log(response);
             return response
           }
         );
       }],
       homeworks: ['ProjectsService', function (ProjectsService) {
-        var dummy2 = ProjectsService.getAllProjects().then(function(r){return r.data});
-        console.log("On projects page, array of all 9 projects:");
-        console.log(dummy2);
-        return dummy2;
+        ProjectsService.getProjectsForCategory("homework").then(function(r){return r});
       }]
     }
   })
