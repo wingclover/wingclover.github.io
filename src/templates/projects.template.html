@@ -4,10 +4,10 @@
 	</div>
 	<div>
 		<ul class="list-group">
-			<websites website="website" ng-repeat="website in websites"></websites>
+			<websites website="$ctrl.website" ng-repeat="website in websites"></websites>
 		</ul>
 		<ul class="list-group" id="game-list">
-			<homeworks homework="homework" ng-repeat="homework in $ctrl.homeworks" ></homeworks>
+			<homeworks homework="proCtrl.homework" ng-repeat="homework in homeworks" ></homeworks>
 		</ul>
 
 	</div>
