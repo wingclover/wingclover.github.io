@@ -1,5 +1,4 @@
-<ul class="list-group" id="game-list">
-	<li role="presentation" ng-repeat="homework in $ctrl.homeworks" class="list-group-item">
-		<a href="{{ website.url }}">{{ homework.description }}</a>
-	</li>
-</ul>
+<li role="presentation" class="list-group-item">
+	<a href="{{ website.url }}">{{ homework.description }}</a>
+	{{$ctrl.homework.url}}
+</li>
