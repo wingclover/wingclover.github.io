@@ -39,10 +39,16 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     controller: 'ProjectsController as proCtrl',
     resolve: {
       websites: ['ProjectsService', function (ProjectsService) {
-        return ProjectsService.getProjectsForCategory("website");
+        console.log("On projects page, array of websites:")
+        var dummy = ProjectsService.getProjectsForCategory("website");
+        console.log(dummy);
+        return dummy;
       }],
       homeworks: ['ProjectsService', function (ProjectsService) {
-        return ProjectsService.getProjectsForCategory("homework");
+        var dummy2 = ProjectsService.getAllProjects();
+        console.log("On projects page, array of all 9 projects:");
+        console.log(dummy2);
+        return dummy2;
       }]
     }
   })

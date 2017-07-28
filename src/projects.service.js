@@ -22,6 +22,8 @@
 				url: "https://api.myjson.com/bins/pz5xx"
 			}).then(function(result){
 				var projects = result.data.filter(function(pr){return pr.type==category});
+				console.log("ProjectsService.getProjectsForCategory called, return as below:")
+				console.log(projects);
 				return projects})
 		};
 	};
