@@ -3,7 +3,10 @@
 		<h2>Projects</h2>
 	</div>
 	<div>
-		<websites websites="websites" ng-repeat="website in $ctrl.websites"></websites>
+		<ul class="list-group">
+			<websites website="website" ng-repeat="website in proCtrl.websites"></websites>
+		</ul>
+
 		<homeworks homeworks="homeworks"></homeworks>
 	</div>
 </div>

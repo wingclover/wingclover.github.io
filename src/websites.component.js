@@ -5,7 +5,7 @@
 	.component('websites',{
 		templateUrl: 'src/templates/websites.template.html',
 		bindings: {
-		websites: '<'
+		website: '<'
 		}
 	});
 
