@@ -25,10 +25,10 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     controller: 'ResumeController as ResCtrl',
     resolve: {
       websites: ['ProjectsService', function (ProjectsService) {
-        return ProjectsService.getProjectsForCategory("website");
+        return ProjectsService.getProjectsForCategory("website")();
       }],
       homeworks: ['ProjectsService', function (ProjectsService) {
-        return ProjectsService.getProjectsForCategory("homework");
+        return ProjectsService.getProjectsForCategory("homework")();
       }]
     }
   })
@@ -39,9 +39,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     controller: 'ProjectsController',
     resolve: {
       websites: ['ProjectsService', function (ProjectsService) {
-        ProjectsService.getProjectsForCategory("website").then(
-          function(response){return response}
-        );
+        return ProjectsService.getProjectsForCategory("website")();
       }],
       homeworks: ['ProjectsService', function (ProjectsService) {
         var dummy = ProjectsService.getProjectsForCategory("homework")();
