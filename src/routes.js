@@ -36,12 +36,12 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   .state('projects', {
     url: '/projects',
     templateUrl: 'src/templates/projects.template.html',
-    controller: 'ProjectsController as proCtrl',
+    controller: 'ProjectsController',
     resolve: {
       websites: ['ProjectsService', function (ProjectsService) {
         ProjectsService.getProjectsForCategory("website").then(
           function(response){
-            console.log("9:50pm, on projects page.")
+            console.log("9:53pm, on projects page.")
             return response
           }
         );
