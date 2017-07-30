@@ -41,7 +41,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       websites: ['ProjectsService', function (ProjectsService) {
         ProjectsService.getProjectsForCategory("website").then(
           function(response){
-            console.log("9:41pm, on projects page.")
+            console.log("9:44pm, on projects page.")
             return response
           }
         );
