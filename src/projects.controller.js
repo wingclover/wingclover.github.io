@@ -10,6 +10,7 @@ function ProjectsController(websites, homeworks) {
   var ctrl = this;
   ctrl.websites = websites;
   ctrl.homeworks = homeworks;
+  ctrl.greeting = "hello";
 }
 
 })();
