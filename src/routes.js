@@ -40,14 +40,14 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     resolve: {
       websites: ['ProjectsService', function (ProjectsService) {
         ProjectsService.getProjectsForCategory("website").then(
-          function(response){
-            console.log("10:10pm, on projects page.")
-            return response
-          }
+          function(response){return response}
         );
       }],
       homeworks: ['ProjectsService', function (ProjectsService) {
-        ProjectsService.getProjectsForCategory("homework").then(function(r){return r});
+        var dummy = ProjectsService.getProjectsForCategory("homework")();
+        console.log('6:00 pm, homeworks dummy:');
+        console.log(dummy);
+        return dummy;
       }]
     }
   })
