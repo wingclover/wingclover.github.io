@@ -3,13 +3,14 @@
 		<h2>Projects</h2>
 	</div>
 	<div>
-		<p ng-repeat="website in proCtrl.websites">{{website.description}}</p>
-		<p ng-repeat="website in $ctrl.websites">abc</p>
+		<p ng-repeat="website in websites">{{website.description}}</p>
+		<p ng-repeat="website in websites">abc</p>
+		<p>{{websites[0].description}}</p>
 		<ul class="list-group">
-			<websites website="$ctrl.website" ng-repeat="website in websites"></websites>
+			<websites website="website" ng-repeat="website in websites"></websites>
 		</ul>
 		<ul class="list-group" id="game-list">
-			<homeworks homework="proCtrl.homework" ng-repeat="homework in homeworks" ></homeworks>
+			<homeworks homework="homework" ng-repeat="homework in homeworks" ></homeworks>
 		</ul>
 
 	</div>
