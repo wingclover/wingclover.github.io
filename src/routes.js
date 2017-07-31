@@ -22,13 +22,13 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   .state('resume', {
     url: '/resume',
     templateUrl: 'src/templates/resume.template.html',
-    controller: 'ResumeController as ResCtrl',
+    controller: 'ResumeController as resCtrl',
     resolve: {
       websites: ['ProjectsService', function (ProjectsService) {
-        return ProjectsService.getProjectsForCategory("website")();
+        return ProjectsService.getProjectsForCategory("website");
       }],
       homeworks: ['ProjectsService', function (ProjectsService) {
-        return ProjectsService.getProjectsForCategory("homework")();
+        return ProjectsService.getProjectsForCategory("homework");
       }]
     }
   })
@@ -36,16 +36,13 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   .state('projects', {
     url: '/projects',
     templateUrl: 'src/templates/projects.template.html',
-    controller: 'ProjectsController',
+    controller: 'ProjectsController as proCtrl',
     resolve: {
       websites: ['ProjectsService', function (ProjectsService) {
-        return ProjectsService.getProjectsForCategory("website")();
+        return ProjectsService.getProjectsForCategory("website");
       }],
       homeworks: ['ProjectsService', function (ProjectsService) {
-        var dummy = ProjectsService.getProjectsForCategory("homework")();
-        console.log('6:00 pm, homeworks dummy:');
-        console.log(dummy);
-        return dummy;
+        return ProjectsService.getProjectsForCategory("homework");
       }]
     }
   })

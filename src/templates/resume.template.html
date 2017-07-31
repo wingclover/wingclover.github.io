@@ -8,9 +8,12 @@
 		<h2 class="text-center">Resume</h2>
 		<h2>Projects</h2>
 		<p><i>Websites/Webapps</i></p>
-		<websites websites="resCtrl.websites"></websites>
+		<websites website="website" ng-repeat="website in resCtrl.websites"></websites>
 		<p><i>Games</i></p>
-		<homeworks homeworks="resCtrl.homeworks"></homeworks>
+		<p>The following games were class projects implemented in Codeskulptor. After clicking the links in here, just click the play button (triangle) on the upper left of the new page to start the game.</p>
+		<ul class="game-list">
+			<homeworks homework="homework" ng-repeat="homework in resCtrl.homeworks" ></homeworks>
+		</ul>
 	</div>
 	<div class="center_piece">
 		<h2>Skills & Expertise</h2>

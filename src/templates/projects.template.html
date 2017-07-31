@@ -3,12 +3,12 @@
 		<h2>Projects</h2>
 	</div>
 	<div>
-		<p>{{greeting}}</p>
-		<ul class="list-group">
-			<websites website="website" ng-repeat="website in websites"></websites>
+		<ul>
+			<websites website="website" ng-repeat="website in proCtrl.websites"></websites>
 		</ul>
-		<ul class="list-group" id="game-list">
-			<homeworks homework="homework" ng-repeat="homework in homeworks" ></homeworks>
+		<p>The following games were class projects implemented in Codeskulptor. After clicking the links in here, just click the play button (triangle) on the upper left of the new page to start the game.</p>
+		<ul class="game-list">
+			<homeworks homework="homework" ng-repeat="homework in proCtrl.homeworks" ></homeworks>
 		</ul>
 
 	</div>
