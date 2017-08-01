@@ -1,43 +1,38 @@
-{
-  "website": [
-    {
-      "description": "A wedding website that I built for my friends' wedding. I'm working on getting the RSVP part myself (right now it uses an external RSVP service)",
-      "url": "http://wingclover.github.io/wedding2017"
-    },
-    {
-      "description": "This website re-wrote with AngularJS as my github personal page. Next I'm going to decorate it with Skrollr.",
-      "url": "http://wingclover.github.io",
-      "note": "https://github.com/Prinzhorn/skrollr"
-    },
-    {
-      "description": "A blog under construction for my cat (python with webapp2 framework and jinja templating.)",
-      "url": "http://nodal-ivy-88401.appspot.com/"
-    },
-    {
-      "description": "Simple Cipher: a simple webapp that encrypts your text and decrypts it with the same button. The next stage is to allow user to set a secret word for deciphering, as well as adding Braille text translating fuction.",
-      "url": "http://solar-nation-89120.appspot.com/"
-    }
-  ],
-  "homework": [
-    {
-      "description": "2048",
-      "url": "http://www.codeskulptor.org/#user39_rEFHQLSWK8_13.py"
-    },
-    {
-      "description": "Rice Rock (Asteroid)",
-      "url": "http://www.codeskulptor.org/#user38_lf6NAL9PUb_3.py"
-    },
-    {
-      "description": "Black Jack",
-      "url": "http://www.codeskulptor.org/#user38_JakDiWKGaP_1.py"
-    },
-    {
-      "description": "Memory",
-      "url": "http://www.codeskulptor.org/#user38_D53ZH2zNrN_2.py"
-    },
-    {
-      "description": "Pong",
-      "url": "http://www.codeskulptor.org/#user38_oPVHzTlQ9z_5.py"
-    }
-  ]
-}
+[
+  { "type":"website",
+    "description":"A wedding website that I built for my friends' wedding. I'm working on getting the RSVP part myself (right now it uses an external RSVP service)",
+    "url":"http://wingclover.github.io/wedding2017"
+  },
+  { "type":"website",
+    "description":"This website re-wrote with AngularJS as my github personal page. Next I'm going to decorate it with Skrollr.",
+    "url":"http://wingclover.github.io",
+    "note":"https://github.com/Prinzhorn/skrollr"
+  },
+  { "type":"website",
+    "description":"A blog under construction for my cat (python with webapp2 framework and jinja templating.)",
+    "url":"http://nodal-ivy-88401.appspot.com/"
+  },
+  { "type":"website",
+    "description":"Simple Cipher: a simple webapp that encrypts your text and decrypts it with the same button. The next stage is to allow user to set a secret word for deciphering, as well as adding Braille text translating fuction.",
+    "url":"http://solar-nation-89120.appspot.com/"
+  },
+  { "type":"homework",
+    "description":"2048",
+    "url":"http://www.codeskulptor.org/#user39_rEFHQLSWK8_13.py"
+  },
+  { "type":"homework",
+    "description":"Rice Rock (Asteroid)",
+    "url":"http://www.codeskulptor.org/#user38_lf6NAL9PUb_3.py"
+  },
+  { "type":"homework",
+    "description":"Black Jack",
+    "url":"http://www.codeskulptor.org/#user38_JakDiWKGaP_1.py"
+  },
+  { "type":"homework",
+    "description":"Memory",
+    "url":"http://www.codeskulptor.org/#user38_D53ZH2zNrN_2.py"
+  },
+  { "type":"homework",
+    "description":"Pong",
+    "url":"http://www.codeskulptor.org/#user38_oPVHzTlQ9z_5.py"
+  }]
