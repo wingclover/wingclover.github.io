@@ -1,19 +1,28 @@
 [
   { "type":"website",
-    "description":"A wedding website that I built for my friends' wedding. I'm working on getting the RSVP part myself (right now it uses an external RSVP service)",
-    "url":"http://wingclover.github.io/wedding2017"
-  },
-  { "type":"website",
-    "description":"This website re-wrote with AngularJS as my github personal page. Next I'm going to decorate it with Skrollr.",
+    "title":"Personal Website",
+    "description":"This website built with AngularJS as my github personal page. Next I'm going to decorate it with Skrollr.",
     "url":"http://wingclover.github.io",
     "note":"https://github.com/Prinzhorn/skrollr"
   },
   { "type":"website",
+    "title":"A Blog",
     "description":"A blog under construction for my cat (python with webapp2 framework and jinja templating.)",
     "url":"http://nodal-ivy-88401.appspot.com/"
   },
   { "type":"website",
-    "description":"Simple Cipher: a simple webapp that encrypts your text and decrypts it with the same button. The next stage is to allow user to set a secret word for deciphering, as well as adding Braille text translating fuction.",
+    "title":"Simple Cipher",
+    "description":"A simple webapp that encrypts your text and decrypts it with the same button. The next stage is to allow user to set a secret word for deciphering, as well as adding Braille text translating function.",
+    "url":"http://solar-nation-89120.appspot.com/"
+  },
+  { "type":"website",
+    "title":"A Wedding Website",
+    "description":"A wedding website that I built for my friends' wedding. I'm working on getting the RSVP part myself (right now it uses an external RSVP service).",
+    "url":"http://wingclover.github.io/wedding2017"
+  },
+  { "type":"website",
+    "title":"Alexa Skills",
+    "description":"I've implemented a couple of Alexa Skills for Amazon Alexa enabled devices. One of them is Bellefonte Guide, a touring guide for the beautiful Victorian Bellefonte.",
     "url":"http://solar-nation-89120.appspot.com/"
   },
   { "type":"homework",
@@ -35,4 +44,5 @@
   { "type":"homework",
     "description":"Pong",
     "url":"http://www.codeskulptor.org/#user38_oPVHzTlQ9z_5.py"
-  }]
+  }
+]
