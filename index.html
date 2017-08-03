@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="FrontPage">
+<html lang="en" ng-app="FrontPage" ng-strict-di>
 <head>
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,6 +24,7 @@
 </head>
 
 <body>
+	<loading class="loading-indicator"></loading>
 	<div id="wrapper">
 		<header>
 		    <nav id="header-nav" class="navbar navbar-default">
@@ -62,7 +63,11 @@
 
 <!-- main area -->
 	 	<main class="container" id="content">
-				<ui-view></ui-view>
+				<ui-view>
+					<div class="text-center">
+						<h2>loading site...</h2>
+					</div>
+				</ui-view>
 		</main>
 <!-- end of main area -->
 
@@ -76,7 +81,7 @@
 	</div>
 
 
-
+<!-- libraries -->
 <script src="lib/angular.min.js"></script>
 <script src="lib/angular-ui-router.min.js"></script>
 
@@ -87,6 +92,11 @@
 
 <script src="src/projects.controller.js"></script>
 <script src="src/resume.controller.js"></script>
+
+<!-- common module -->
+<script src="src/common/common.module.js"></script>
+<script src="src/common/loading/loading.component.js"></script>
+<script src="src/common/loading/loading.interceptor.js"></script>
 
 <script src="src/projects.service.js"></script>
 
