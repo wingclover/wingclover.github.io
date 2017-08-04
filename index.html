@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="FrontPage" ng-strict-di>
+<html lang="en" ng-app="FrontPage">
 <head>
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,9 +50,9 @@
 		        <div class="collapse navbar-collapse" id="navbar-collapse">
 		          <ul id="nav-list" class="nav navbar-nav navbar-right text-center">
 		            <li ui-sref-active="active"><a ui-sref = "home">Home</a></li>
-								<li><a ui-sref = "projects">Projects</a></li>
-								<li><a ui-sref = "resume">Resume</a></li>
-								<li><a ui-sref = "gallery">Gallery</a></li>
+								<li ui-sref-active="active"><a ui-sref = "projects">Projects</a></li>
+								<li ui-sref-active="active"><a ui-sref = "resume">Resume</a></li>
+								<li ui-sref-active="active"><a ui-sref = "gallery">Gallery</a></li>
 		          </ul>
 		        </div><!-- /.navbar-collapse -->
 
@@ -65,7 +65,7 @@
 	 	<main class="container" id="content">
 				<ui-view>
 					<div class="text-center">
-						<h2>loading site...</h2>
+						<h2>loading...</h2>
 					</div>
 				</ui-view>
 		</main>
