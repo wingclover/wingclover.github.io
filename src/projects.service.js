@@ -19,9 +19,9 @@
 		service.getProjectsForCategory = function(category){
 			return $http({
 				method: "GET",
-				url: "https://raw.githubusercontent.com/wingclover/wingclover.github.io/master/src/projects.json?type=" + category
+				url: "https://raw.githubusercontent.com/wingclover/wingclover.github.io/master/src/projects.json"
 			}).then(function(result){
-				return result.data.projects);
+				return result.data.filter(function(pr){return pr.type==category});
 			})
 		};
 	};

@@ -1,4 +1,4 @@
-{"projects":[
+[
   { "type":"website",
     "title":"Personal Website",
     "description":"This website built with AngularJS as my github personal page. Next I'm going to decorate it with Skrollr.",
@@ -46,4 +46,3 @@
     "url":"http://www.codeskulptor.org/#user38_oPVHzTlQ9z_5.py"
   }
 ]
-}
