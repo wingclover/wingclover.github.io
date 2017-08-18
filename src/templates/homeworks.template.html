@@ -1,3 +1,9 @@
-<li>
+<!-- <li>
 	<a href="{{ $ctrl.homework.url }}" target="_blank">{{ $ctrl.homework.description }}</a>
-</li>
+</li> -->
+<div class="col-md-4 col-sm-6">
+	<a href="{{ $ctrl.homework.url }}" target="_blank">
+		<img src="{{ $ctrl.homework.image_url }}" alt="{{ $ctrl.homework.description }}" height="200" width="300">
+		<p>{{ $ctrl.homework.description }}</p>
+	</a>
+</div>
