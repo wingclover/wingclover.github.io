@@ -200,6 +200,10 @@ footer {
 list-style-type: none;
 }
 
+.projects-background {
+	background-color: black;
+}
+
 /*-- end of resume.html --*/
 
 /* Extra small devices (phones, less than 768px) */
