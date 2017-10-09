@@ -137,6 +137,17 @@ footer {
 	color: black;
 }
 
+#contact button {
+  border-radius: 20px;
+  width: 150px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  display: block;
+}
+
 #selfie {
 	height:200px;
 	width: 185px;
