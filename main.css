@@ -137,6 +137,11 @@ footer {
 	color: black;
 }
 
+#selfie {
+	height:200px;
+	border-radius: 10px;
+}
+
 #intro-tile {
 	padding: 0 50px 10px 50px;
 }
