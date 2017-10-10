@@ -15,9 +15,9 @@ html, body {
 }
 
 #content {
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 50px; /*Height of footer*/
+	margin: 0;
+	padding: 0 0 50px 0; /*Height of footer*/
+	width: 100%;
 
 }
 
@@ -103,6 +103,12 @@ footer {
 
 /*-- end of base.html --*/
 
+#home-wrapper {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .glyphicon {
 	margin-right: 10px;
 }
@@ -155,7 +161,10 @@ footer {
 }
 
 #intro-tile {
-	padding: 0 50px 10px 50px;
+	padding: 50px 50px 10px 50px;
+	/*font-family: 'Raleway', sans-serif;*/
+	/*font-family: 'Josefin Sans', sans-serif;*/
+
 }
 
 .center_piece {
@@ -201,7 +210,20 @@ list-style-type: none;
 }
 
 .projects-background {
-	background-color: black;
+	background-color: #B4FAEB;
+	width: 100%;
+	padding: 50px;
+	margin: 0;
+}
+
+.projects-background div {
+	padding: 10px 20px 10px 20px;
+}
+
+.categories {
+	font-size: 60px;
+	font-family: cursive;
+	margin-top: 10px;
 }
 
 /*-- end of resume.html --*/
